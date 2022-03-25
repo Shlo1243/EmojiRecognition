@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 class="btn btn-warning">Emoji Recognition!
+        <br>
+        <span style="font-size:50px">&#128514;</span>
+        <span style="font-size:50px">&#128518;</span>
+        <span style="font-size:50px">&#128528;</span>
+        <span style="font-size:50px">&#128545;</span>
+    </h1>
+    <br>
+    <h3>Take a selfie to generate your emoji!</h3>
+    <br>
+    <h2>Are you happy?</h2>
+    <br>
+    <h3>Are you sad?</h3>
+    <br>
+    <h3>Are you angry?</h3>
+    <br>
+    <div id="pic">
+        <p>webcam view</p>
+        <div id="camera">
+
+        </div>
+        <br>
+        <button id="b1" onclick="take_snapshot()">Capture Image</button>
+    </div>
+    <div id="pic2">
+        <p>snapshot view</p>
+        <div id="selfie">
+
+        </div>
+        <br>
+        <button id="b2">Predict Emotion </button>
+    </div>
+
+    <div id="Prediction">
+        <label id="l1">Prediction-1:</label>
+        <br>
+        <label id="P1"></label>
+        <label id="E1"></label>
+        <br>
+        <br>
+        <label id="l2">Prediction-2:</label>
+        <br>
+        <label id="P2"></label>
+        <label id="E2"></label>
+        <br>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+body {
+    background-color:lightgoldenrodyellow;
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+}
+#pic{
+    float:left;
+}
+#pic2{
+    float:right;
+}
